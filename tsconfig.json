@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es5",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "outDir": "build/ts_build"
+  },
+  "files": [
+    "./typings/index.d.ts",
+    "./src/game.main.ts"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules",
+    "typings"
+  ]
+}

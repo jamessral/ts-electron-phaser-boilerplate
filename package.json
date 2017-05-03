@@ -1,0 +1,15 @@
+{
+  "name": "swords_and_sandcastles",
+  "version": "0.0.1",
+  "dependencies": {
+    "electron": "^1.6.6",
+    "phaser": "^2.6.2",
+    "rollup": "^0.41.6",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "scripts": {
+    "rollup": "rollup -c \"rollup.config.js\"",
+    "build": "tsc && npm run rollup"
+  },
+  "main": "main.js"
+}
