@@ -14,13 +14,13 @@
     "build": "tsc && npm run rollup",
     "tsWatch": "tsc -w",
     "rollupWatch": "rollup -c \"rollup.config.js\" -w",
-    "serve": "./node_modules/http-server ./ -p 8888",
-    "electronServe": "./node_modules/electron ."
+    "serve": "./node_modules/http-server/bin/http-server ./ -p 8888",
+    "electronServe": "electron ."
   },
   "main": "main.js",
   "devDependencies": {
     "concurrently": "^3.5.0",
-    "http-serve": "^1.0.1",
+    "http-server": "^0.10.0",
     "rollup-watch": "^4.3.1"
   }
 }
