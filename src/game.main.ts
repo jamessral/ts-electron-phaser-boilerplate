@@ -1,4 +1,4 @@
-class SandcastlesGame {
+class Game {
   constructor() {
     this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', { preload: this.preload, create: this.create })
   }
@@ -15,5 +15,5 @@ class SandcastlesGame {
 }
 
 window.onload = () => {
-  const game = new SandcastlesGame();
+  const game = new Game();
 }
