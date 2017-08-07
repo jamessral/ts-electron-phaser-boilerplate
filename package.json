@@ -8,8 +8,19 @@
     "rollup-plugin-node-resolve": "^3.0.0"
   },
   "scripts": {
+    "dev": "npm run tsWatch & npm run rollupWatch & npm run serve",
+    "devElectron": "npm run tsWatch & npm run rollupWatch & npm run electronServe",
     "rollup": "rollup -c \"rollup.config.js\"",
-    "build": "tsc && npm run rollup"
+    "build": "tsc && npm run rollup",
+    "tsWatch": "tsc -w",
+    "rollupWatch": "rollup -c \"rollup.config.js\" -w",
+    "serve": "./node_modules/http-server ./ -p 8888",
+    "electronServe": "./node_modules/electron ."
   },
-  "main": "main.js"
+  "main": "main.js",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "http-serve": "^1.0.1",
+    "rollup-watch": "^4.3.1"
+  }
 }
