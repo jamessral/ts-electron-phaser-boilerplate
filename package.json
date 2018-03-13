@@ -1,27 +1,24 @@
 {
-  "name": "swords_and_sandcastles",
+  "name": "ts-electron-phaser-boilerplate",
   "version": "0.0.1",
   "dependencies": {
     "electron": "^1.6.6",
     "phaser": "^3.2.0",
-    "rollup": "^0.41.6",
     "rollup-plugin-node-resolve": "^3.0.0",
     "typescript": "^2.7.2"
   },
   "scripts": {
-    "dev": "npm run tsWatch & npm run rollupWatch & npm run serve",
-    "devElectron": "npm run tsWatch & npm run rollupWatch & npm run electronServe",
-    "rollup": "rollup -c \"rollup.config.js\"",
-    "build": "tsc && npm run rollup",
+    "dev": "parcel index.html",
+    "devElectron": "npm run tsWatch & npm run dev & npm run electronServe",
+    "build": "parcel build ./index.html -d build/",
     "tsWatch": "tsc -w",
-    "rollupWatch": "rollup -c \"rollup.config.js\" -w",
-    "serve": "./node_modules/http-server/bin/http-server ./ -p 8888",
     "electronServe": "electron ."
   },
   "main": "main.js",
   "devDependencies": {
     "concurrently": "^3.5.0",
     "http-server": "^0.10.0",
+    "parcel-bundler": "^1.6.2",
     "prettier": "1.11.1",
     "rollup-watch": "^4.3.1",
     "tslint": "^5.9.1",
