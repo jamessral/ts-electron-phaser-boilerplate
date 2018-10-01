@@ -1,6 +1,6 @@
 {
   "name": "ts-electron-phaser-boilerplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "dependencies": {
     "electron": "^3.0.2",
     "parcel": "^1.10.1",
