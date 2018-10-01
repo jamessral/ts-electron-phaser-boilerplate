@@ -1,4 +1,4 @@
-import 'phaser';
+import { Game } from 'phaser'
 
 interface IConfig {
   width: number;
@@ -9,14 +9,14 @@ interface IConfig {
   scene?: [Phaser.Scene];
 }
 
-class Game extends Phaser.Game {
+class MyGame extends Game {
   constructor(config: IConfig) {
     super(config);
   }
 }
 
 window.onload = () => {
-  const game = new Game({
+  const game = new MyGame({
     height: 600,
     parent: 'game',
     physics: {

@@ -8,10 +8,9 @@
     "typescript": "^3.1.1"
   },
   "scripts": {
-    "dev": "parcel index.html",
-    "devElectron": "npm run tsWatch & npm run dev & npm run electronServe",
+    "dev": "parcel serve index.html -d build/",
+    "devElectron": "NODE_ENV=development parcel serve index.html -d build/ --public-url ./ & electron .",
     "build": "parcel build ./index.html -d build/",
-    "tsWatch": "tsc -w",
     "electronServe": "electron ."
   },
   "main": "main.js",
